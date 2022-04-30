@@ -27,13 +27,17 @@ Plug 'christoomey/vim-tmux-navigator' "Para saltar usar ctrl
 " syntax
 Plug 'sheerun/vim-polyglot'
 
+" LaTeX
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'lervag/vimtex'
+
 " typing
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround' 
 
 " autocomplete
-Plug 'sirver/ultisnips'
+"Plug 'sirver/ultisnips'
 Plug 'neoclide/coc.nvim' , {'branch': 'release'}
 
 " status bar
@@ -43,6 +47,7 @@ call plug#end()
 colorscheme gruvbox
 let g:gruvbox_contsrast_dark = 'hard'
 let NERDTreeQuitOnOpen=1
+let g:deoplete#enable_at_startuo = 1  
 
 let mapleader=" "
 
