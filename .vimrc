@@ -71,3 +71,17 @@ nnoremap <C-k> 10<C-y>
 " Vimtex
 nmap <leader>tc :VimtexTocOpen<CR>
 nmap <leader>cm :VimtexCompile<CR>
+
+" Plantillas
+nnoremap ,tex :-1read ~/.config/platillas/tex.tex<CR>
+
+
+
+
+
+
+
+
+
+
+
