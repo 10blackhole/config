@@ -51,6 +51,7 @@ let g:gruvbox_contsrast_dark = 'hard'
 let NERDTreeQuitOnOpen=1
 let g:deoplete#enable_at_startuo = 1  
 
+" Mapeos
 let mapleader=" "
 
 nmap <leader>s <Plug>(easymotion-s2)
@@ -58,3 +59,15 @@ nmap <leader>nt :NERDTreeFind<CR>
 nmap <leader>w :w<CR>
 nmap <leader>q :q<CR>
 nmap <leader>wq :wq<CR>
+
+" split resize
+nnoremap <leader>> 10<C-w>>
+nnoremap <leader>< 10<C-w><
+
+" faster scrolling
+nnoremap <C-j> 10<C-e>
+nnoremap <C-k> 10<C-y>
+
+" Vimtex
+nmap <leader>tc :VimtexTocOpen<CR>
+nmap <leader>cm :VimtexCompile<CR>
