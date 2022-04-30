@@ -18,6 +18,7 @@ call plug#begin("~/.vim/plugged")
 "Themes
 Plug 'morhetz/gruvbox' 
 Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'tomasr/molokai'
 
 " IDE
 Plug 'easymotion/vim-easymotion'
@@ -46,7 +47,7 @@ Plug 'neoclide/coc.nvim' , {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
 call plug#end()
 
-colorscheme gruvbox
+colorscheme gruvbox 
 let g:gruvbox_contsrast_dark = 'hard'
 let NERDTreeQuitOnOpen=1
 let g:deoplete#enable_at_startuo = 1  
