@@ -23,8 +23,10 @@ Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator' "Para saltar usar ctrl
+Plug 'yggdroot/indentline'
+Plug 'scrooloose/nerdcommenter' "Con space-c-space se cometa la línea
 
-" syntax
+"syntax
 Plug 'sheerun/vim-polyglot'
 
 " LaTeX
