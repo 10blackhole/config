@@ -9,9 +9,9 @@ set encoding=utf-8
 set showmatch
 set sw=2  
 set relativenumber
-set virtualedit=all
+"set virtualedit=all
 set background=dark
-set guicursor+=n-v-c:blinkon0
+set cursorline
 
 set laststatus=2
 set noshowmode
@@ -24,7 +24,9 @@ Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'tomasr/molokai'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'rakr/vim-one'
-
+Plug 'arcticicestudio/nord-vim' "colorscheme nord
+Plug 'dylanaraps/wal.vim' " colorscheme wal
+" 
 " IDE
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
@@ -53,11 +55,13 @@ Plug 'neoclide/coc.nvim' , {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
 call plug#end()
 
-colorscheme one
+colorscheme one 
 let g:gruvbox_contsrast_dark = 'hard'
 let NERDTreeQuitOnOpen=1
-"let g:deoplete#enable_at_startup = 1  
 let NERDTreeShowHidden=0
+let g:airline_theme='one'
+let g:one_allow_italics = 1
+"
 " Settings og colorscheme one
 "Credit joshdick
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
@@ -77,14 +81,13 @@ if (empty($TMUX))
 endif
 
 
-set background=dark " for the dark version
 " set background=light " for the light version
-colorscheme one
-" Mapeos
+
+"Mapeos
 let mapleader=" "
 
 nmap <leader>s <Plug>(easymotion-s2)
-nmap <leader>nt :NERDTreeFind<CR>
+nmap <leader>nt :NERDTree<CR>
 nmap <leader>w :w<CR>
 nmap <leader>q :q<CR>
 nmap <leader>wq :wq<CR>
@@ -99,7 +102,8 @@ nnoremap <C-k> 10<C-y>
 
 " Vimtex
 nmap <leader>tc :VimtexTocOpen<CR>
-nmap <leader>cm :VimtexCompile<CR>
+nmap <leader>co :VimtexCompile<CR>
 "
 " Plantillas
 nnoremap ,tex :-1read ~/.config/platillas/tex.tex<CR>
+
