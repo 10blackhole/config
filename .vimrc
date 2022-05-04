@@ -26,6 +26,7 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'rakr/vim-one'
 Plug 'arcticicestudio/nord-vim' "colorscheme nord
 Plug 'dylanaraps/wal.vim' " colorscheme wal
+Plug 'dracula/vim', { 'as': 'dracula' }
 " 
 " IDE
 Plug 'easymotion/vim-easymotion'
@@ -55,7 +56,7 @@ Plug 'neoclide/coc.nvim' , {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
 call plug#end()
 
-colorscheme one 
+colorscheme dracula  
 let g:gruvbox_contsrast_dark = 'hard'
 let NERDTreeQuitOnOpen=1
 let NERDTreeShowHidden=0
