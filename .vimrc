@@ -107,4 +107,5 @@ nmap <leader>co :VimtexCompile<CR>
 "
 " Plantillas
 nnoremap ,tex :-1read ~/.config/platillas/tex.tex<CR>
+nnoremap ,graf:-1read ~/.config/platillas/grafico.py<CR>
 
