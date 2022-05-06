@@ -112,10 +112,10 @@ nmap <leader>co :VimtexCompile<CR>
 
 " Plantillas
 nnoremap ,tex :-1read ~/.config/platillas/tex.tex<CR>
-nnoremap ,graf:-1read ~/.config/platillas/grafico.py<CR>
+nnoremap ,graf :-1read ~/.config/platillas/grafico.py<CR>
 nnoremap ,fig :-1read ~/.config/platillas/fig.tex<CR>
-nnoremap ,eq:-1read ~/.config/platillas/equation.tex<CR>
-nnoremap ,al:-1read ~/.config/platillas/align.tex<CR>
+nnoremap ,eq :-1read ~/.config/platillas/equation.tex<CR>
+nnoremap ,al :-1read ~/.config/platillas/align.tex<CR>
 
 
 
