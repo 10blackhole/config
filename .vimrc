@@ -56,7 +56,7 @@ Plug 'neoclide/coc.nvim' , {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
 call plug#end()
 
-colorscheme dracula  
+colorscheme dracula
 let g:gruvbox_contsrast_dark = 'hard'
 let NERDTreeQuitOnOpen=1
 let NERDTreeShowHidden=0
@@ -105,7 +105,38 @@ nnoremap <C-k> 10<C-y>
 nmap <leader>tc :VimtexTocOpen<CR>
 nmap <leader>co :VimtexCompile<CR>
 "
+" Ultisnips
+"let g:UltiSnipsExpandTrigger = '<tab>'
+"let g:UltiSnipsJumpForwardTrigger = '<tab>'
+"let g:UltisnipsBackwardTrigger = '<s-tab>'
+
 " Plantillas
 nnoremap ,tex :-1read ~/.config/platillas/tex.tex<CR>
 nnoremap ,graf:-1read ~/.config/platillas/grafico.py<CR>
+nnoremap ,fig :-1read ~/.config/platillas/fig.tex<CR>
+nnoremap ,eq:-1read ~/.config/platillas/equation.tex<CR>
+nnoremap ,al:-1read ~/.config/platillas/align.tex<CR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
