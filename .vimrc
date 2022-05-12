@@ -27,6 +27,7 @@ Plug 'rakr/vim-one'
 Plug 'arcticicestudio/nord-vim' "colorscheme nord
 Plug 'dylanaraps/wal.vim' " colorscheme wal
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'neovim/nvim-lspconfig'
 " 
 " IDE
 Plug 'easymotion/vim-easymotion'
@@ -56,7 +57,8 @@ Plug 'neoclide/coc.nvim' , {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
 call plug#end()
 
-colorscheme dracula
+colorscheme gruvbox 
+hi Normal guibg=NONE ctermbg=NONE
 let g:gruvbox_contsrast_dark = 'hard'
 let NERDTreeQuitOnOpen=1
 let NERDTreeShowHidden=0
@@ -111,30 +113,11 @@ nmap <leader>co :VimtexCompile<CR>
 "let g:UltisnipsBackwardTrigger = '<s-tab>'
 
 " Plantillas
-nnoremap ,tex :-1read ~/.config/platillas/tex.tex<CR>
-nnoremap ,graf :-1read ~/.config/platillas/grafico.py<CR>
-nnoremap ,fig :-1read ~/.config/platillas/fig.tex<CR>
-nnoremap ,eq :-1read ~/.config/platillas/equation.tex<CR>
-nnoremap ,al :-1read ~/.config/platillas/align.tex<CR>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+nnoremap <leader>tex :-1read ~/.config/platillas/tex.tex<CR>
+nnoremap <leader>graf :-1read ~/.config/platillas/grafico.py<CR>
+nnoremap <leader>fig :-1read ~/.config/platillas/fig.tex<CR>
+nnoremap <leader>eq :-1read ~/.config/platillas/equation.tex<CR>
+nnoremap <leader>al :-1read ~/.config/platillas/align.tex<CR>
 
 
 
