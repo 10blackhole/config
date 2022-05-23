@@ -28,6 +28,7 @@ Plug 'arcticicestudio/nord-vim' "colorscheme nord
 Plug 'dylanaraps/wal.vim' " colorscheme wal
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'neovim/nvim-lspconfig'
+Plug 'sainnhe/gruvbox-material'
 " 
 " IDE
 Plug 'easymotion/vim-easymotion'
@@ -36,7 +37,10 @@ Plug 'christoomey/vim-tmux-navigator' "Para saltar usar ctrl
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter' "Con space-c-space se cometa la línea
 Plug 'ryanoasis/vim-devicons'
-
+Plug 'strboul/urlview.vim'     "Urlview<CR>
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+" 
 "syntax
 Plug 'sheerun/vim-polyglot'
 
@@ -57,10 +61,10 @@ Plug 'neoclide/coc.nvim' , {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
 call plug#end()
 
-colorscheme gruvbox 
+colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
 let g:gruvbox_contsrast_dark = 'hard'
-let NERDTreeQuitOnOpen=1
+let NERDTreeQuitOnOpen=0
 let NERDTreeShowHidden=0
 let g:airline_theme='one'
 let g:one_allow_italics = 1
@@ -114,12 +118,12 @@ nmap <leader>co :VimtexCompile<CR>
 
 " Plantillas
 nnoremap <leader>tex :-1read ~/.config/platillas/tex.tex<CR>
+nnoremap <leader>tar :-1read ~/.config/platillas/tarea.tex<CR>
 nnoremap <leader>graf :-1read ~/.config/platillas/grafico.py<CR>
 nnoremap <leader>fig :-1read ~/.config/platillas/fig.tex<CR>
 nnoremap <leader>eq :-1read ~/.config/platillas/equation.tex<CR>
 nnoremap <leader>al :-1read ~/.config/platillas/align.tex<CR>
 
-
-
-
-
+"Telescope
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
