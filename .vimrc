@@ -123,6 +123,7 @@ nnoremap <leader>graf :-1read ~/.config/platillas/grafico.py<CR>
 nnoremap <leader>fig :-1read ~/.config/platillas/fig.tex<CR>
 nnoremap <leader>eq :-1read ~/.config/platillas/equation.tex<CR>
 nnoremap <leader>al :-1read ~/.config/platillas/align.tex<CR>
+nnoremap <leader>3d :-1read ~/.config/platillas/graf3d.py<CR>
 
 "Telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
