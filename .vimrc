@@ -40,7 +40,14 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'strboul/urlview.vim'     "Urlview<CR>
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-" 
+Plug 'junegunn/goyo.vim'" 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+"Plug 'mhinz/vim-signify'
+
 "syntax
 Plug 'sheerun/vim-polyglot'
 
@@ -54,18 +61,20 @@ Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround' 
 
 " autocomplete
-"Plug 'sirver/ultisnips'
+"Plug 'SirVer/ultisnips'
+"Plug 'honza/vim-snippets'
 Plug 'neoclide/coc.nvim' , {'branch': 'release'}
 
 " status bar
 Plug 'itchyny/lightline.vim'
+
 call plug#end()
 
 colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
 let g:gruvbox_contsrast_dark = 'hard'
 let NERDTreeQuitOnOpen=0
-let NERDTreeShowHidden=0
+let NERDTreeShowHidden=1
 let g:airline_theme='one'
 let g:one_allow_italics = 1
 "
@@ -124,7 +133,11 @@ nnoremap <leader>fig :-1read ~/.config/platillas/fig.tex<CR>
 nnoremap <leader>eq :-1read ~/.config/platillas/equation.tex<CR>
 nnoremap <leader>al :-1read ~/.config/platillas/align.tex<CR>
 nnoremap <leader>3d :-1read ~/.config/platillas/graf3d.py<CR>
+nnoremap <leader>html :-1read ~/.config/platillas/index.html<CR>
 
 "Telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+"Goyo
+nnoremap <C-g> :Goyo<CR>
+
