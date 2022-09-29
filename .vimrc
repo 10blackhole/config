@@ -52,8 +52,11 @@ Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 
 " LaTeX
-"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'lervag/vimtex'
+
+"Julia
+Plug 'JuliaEditorSupport/julia-vim'
 
 " typing
 Plug 'jiangmiao/auto-pairs'
@@ -74,7 +77,7 @@ colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
 let g:gruvbox_contsrast_dark = 'hard'
 let NERDTreeQuitOnOpen=0
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden=0
 let g:airline_theme='one'
 let g:one_allow_italics = 1
 "
@@ -104,6 +107,7 @@ let mapleader=" "
 
 nmap <leader>s <Plug>(easymotion-s2)
 nmap <leader>nt :NERDTree<CR>
+nmap <leader>tt :NERDTreeToggle<CR>
 nmap <leader>w :w<CR>
 nmap <leader>q :q<CR>
 nmap <leader>wq :wq<CR>
@@ -141,3 +145,5 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 "Goyo
 nnoremap <C-g> :Goyo<CR>
 
+ "Use deoplete.
+"let g:deoplete#enable_at_startup = 1
