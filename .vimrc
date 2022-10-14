@@ -138,7 +138,7 @@ nnoremap <leader>eq :-1read ~/.config/platillas/equation.tex<CR>
 nnoremap <leader>al :-1read ~/.config/platillas/align.tex<CR>
 nnoremap <leader>3d :-1read ~/.config/platillas/graf3d.py<CR>
 nnoremap <leader>html :-1read ~/.config/platillas/index.html<CR>
-nnoremap <leader>eqs :-1read ~/.config/platillas/eq-system.tex<CR>
+nnoremap <leader>es :-1read ~/.config/platillas/eq-system.tex<CR>
 
 "Telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
