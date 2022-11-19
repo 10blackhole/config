@@ -13,9 +13,10 @@ alias nv='nvim'
 alias ofzf='open $(fzf)'
 alias cfzf='cd $(fzf)'
 alias nvfzf='nv $(fzf)'
-alias rmi="rm -i"
+alias rm="rm -i"
 
 # Alias for Git
-alias gts='git status'
-alias gtcm='git commit -m "."'
-alias gtp='git push'
+alias gs='git status'
+alias ga='git add'
+alias gcm='git commit -m'
+alias gp='git push'
