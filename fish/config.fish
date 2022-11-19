@@ -14,7 +14,7 @@ alias ofzf='open $(fzf)'
 alias cfzf='cd $(fzf)'
 alias nvfzf='nv $(fzf)'
 alias rm="rm -i"
-alias oa='open -' #Open app
+alias oa='open -a' #Open app
 
 # Alias for Git
 alias gs='git status'
