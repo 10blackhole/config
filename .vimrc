@@ -111,6 +111,7 @@ nmap <leader>tt :NERDTreeToggle<CR>
 nmap <leader>w :w<CR>
 nmap <leader>q :q<CR>
 nmap <leader>wq :wq<CR>
+nmap <leader>md :CocCommand markdown-preview-enhanced.openPreview<CR>
 
 " split resize
 nnoremap <leader>> 10<C-w>>
@@ -135,10 +136,10 @@ nnoremap <leader>tar :-1read ~/.config/platillas/tarea.tex<CR>
 nnoremap <leader>graf :-1read ~/.config/platillas/grafico.py<CR>
 nnoremap <leader>fig :-1read ~/.config/platillas/fig.tex<CR>
 nnoremap <leader>eq :-1read ~/.config/platillas/equation.tex<CR>
+nnoremap <leader>e2 :-1read ~/.config/platillas/eq-system.tex<CR>
 nnoremap <leader>al :-1read ~/.config/platillas/align.tex<CR>
 nnoremap <leader>3d :-1read ~/.config/platillas/graf3d.py<CR>
 nnoremap <leader>html :-1read ~/.config/platillas/index.html<CR>
-nnoremap <leader>es :-1read ~/.config/platillas/eq-system.tex<CR>
 
 "Telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
