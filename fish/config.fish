@@ -15,6 +15,8 @@ alias cfzf='cd $(fzf)'
 alias nvfzf='nv $(fzf)'
 alias rm="rm -i"
 alias o='open' #Open app
+alias cal="calcurse" # Run calcurse
+alias sleep="pmset displaysleepnow"
 
 # Alias for Git
 alias gs='git status'
