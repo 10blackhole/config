@@ -17,6 +17,8 @@ alias rm="rm -i"
 alias o='open' #Open app
 alias cal="calcurse" # Run calcurse
 alias sleep="pmset displaysleepnow"
+alias wtr="curl wttr.in"
+alias desk="cd ~/Desktop" # cd Desktop everywhere
 
 # Alias for Git
 alias gs='git status'
