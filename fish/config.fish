@@ -19,6 +19,7 @@ alias cal="calcurse" # Run calcurse
 alias sleep="pmset displaysleepnow"
 alias wtr="curl wttr.in"
 alias desk="cd ~/Desktop" # cd Desktop everywhere
+alias brv="open -a Brave\ Browser"
 
 # Alias for Git
 alias gs='git status'
