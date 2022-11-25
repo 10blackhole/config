@@ -27,3 +27,9 @@ map [fullscreen] f toggle_fullscreen
 # Open document in fit-width mode by default
 set adjust-open "best-fit"
 
+#https://github.com/rusty-electron/dotfiles/blob/master/.config/zathura/zathurarc
+set font "monospace normal 10"
+set selection-clipboard clipboard
+set sandbox one
+set recolor lightcolor \#2f2d2e
+set recolor-darkcolor \#f4ecd6

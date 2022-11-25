@@ -35,7 +35,7 @@ yabai -m config right_padding                12
 yabai -m config window_gap                   12
 
 # apps to not manage (ignore)
-yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 #yabai -m rule --add app="^Wally$" manage=off
 #yabai -m rule --add app="^Pika$" manage=off
@@ -44,14 +44,14 @@ yabai -m rule --add app="^Finder$" manage=off
 #yabai -m rule --add app="^Logi Options$" manage=off
 yabai -m rule --add app="^Alfred Preferences$" manage=off
 
-yabai -m space 1 --label I
-yabai -m space 2 --label II
-yabai -m space 3 --label III
-yabai -m space 4 --label IV
-yabai -m space 5 --label V
-yabai -m space 6 --label VI
-yabai -m space 7 --label VII
-yabai -m space 8 --label VIII
-yabai -m space 9 --label IX
-yabai -m space 10 --label X
+#yabai -m space 1 --label I
+#yabai -m space 2 --label II
+#yabai -m space 3 --label III
+#yabai -m space 4 --label IV
+#yabai -m space 5 --label V
+#yabai -m space 6 --label VI
+#yabai -m space 7 --label VII
+#yabai -m space 8 --label VIII
+#yabai -m space 9 --label IX
+#yabai -m space 10 --label X
 echo "yabai configuration loaded.."
