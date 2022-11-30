@@ -3,7 +3,7 @@ if not type -q tmux
     exit 1
 end
 
-set -q fish_tmux_autostart || set fish_tmux_autostart true
+set -q fish_tmux_autostart || set fish_tmux_autostart false
 set -q fish_tmux_autostart_once || set fish_tmux_autostart_once true
 set -q fish_tmux_autoconnect || set fish_tmux_autoconnect true
 set -q fish_tmux_autoquit || set fish_tmux_autoquit $fish_tmux_autostart

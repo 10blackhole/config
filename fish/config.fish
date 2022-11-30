@@ -3,7 +3,8 @@ if status is-interactive
     set -gx EDITOR nvim
 end
 
-starship init fish | source
+#starship init fish | source
+#zoxide init fish | source
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -13,7 +14,6 @@ starship init fish | source
 alias rg='ranger'
 alias nv='nvim'
 alias ofzf='open $(fzf)'
-alias cfzf='cd $(fzf)'
 alias nvfzf='nv $(fzf)'
 alias rm="rm -i"
 alias o='open' #Open app
@@ -24,10 +24,20 @@ alias desk="cd ~/Desktop" # cd Desktop everywhere
 alias conf="cd ~/.config" # cd Desktop everywhere
 alias brv="open -a Brave\ Browser"
 alias lz="lazygit"
+alias icat="kitty +kitten icat" #Allows display images on terminal
 
 # Alias for Git
 alias gs='git status'
 alias ga='git add'
 alias gcm='git commit -m'
 alias gp='git push'
+
+# fzf config
+export FZF_DEFAULT_OPTS="--height=60% --layout=reverse --info=inline --border --margin=1 --padding=1"
+export FZF_DEFAULT_OPTS='--preview="bat --color=always {}"'
+export BAT_THEME="gruvbox-dark"
+# morhetz/gruvbox
+#export FZF_DEFAULT_OPTS='--color=bg+:#3c3836,bg:#32302f,spinner:#fb4934,hl:#928374,fg:#ebdbb2,header:#928374,info:#8ec07c,pointer:#fb4934,marker:#fb4934,fg+:#ebdbb2,prompt:#fb4934,hl+:#fb4934'
+
+
 fish_add_path /Users/borjaalejandrodiezbravo/borja10bravo/.spicetify
