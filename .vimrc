@@ -32,6 +32,8 @@ Plug 'sainnhe/gruvbox-material'
 " 
 " IDE
 Plug 'easymotion/vim-easymotion'
+Plug 'vim-pandoc/vim-pandoc' 
+Plug 'vim-pandoc/vim-pandoc-syntax' 
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator' "Para saltar usar ctrl
 Plug 'yggdroot/indentline'

@@ -1,4 +1,8 @@
 if status is-interactive
+  cd ~/Desktop/
+end
+
+if status is-interactive
     # Commands to run in interactive sessions can go here
     set -gx EDITOR nvim
 end
