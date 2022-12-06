@@ -25,6 +25,9 @@ alias conf="cd ~/.config" # cd Desktop everywhere
 alias brv="open -a Brave\ Browser"
 alias lz="lazygit"
 alias icat="kitty +kitten icat" #Allows display images on terminal
+alias ip="curl ifconfig.me" #Get my current IP
+alias doc='cd ~/Documents'
+alias paper='cd ~/Documents/papers'
 
 # Alias for Git
 alias gs='git status'
