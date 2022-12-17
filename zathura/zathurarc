@@ -1,35 +1,35 @@
-set window-height 1000
-set window-width 1000
+/*set window-height 1000*/
+/*set window-width 1000*/
 
-set statusbar-h-padding 0
-set statusbar-v-padding 0
-set page-padding 1
-map u scroll half-up
-map d scroll half-down
-map D toggle_page_mode
-map r reload
-map R rotate
-map K zoom in
-map J zoom out
-map i recolor
-map p print
+/*set statusbar-h-padding 0*/
+/*set statusbar-v-padding 0*/
+/*set page-padding 1*/
+/*map u scroll half-up*/
+/*map d scroll half-down*/
+/*map D toggle_page_mode*/
+/*map r reload*/
+/*map R rotate*/
+/*map K zoom in*/
+/*map J zoom out*/
+/*map i recolor*/
+/*map p print*/
 
-#stop at page boundries
-set scroll-page-aware "true"
-set smooth-scroll true
-set scroll-full-overlap 0.01
-set scroll-step 100
+/*#stop at page boundries*/
+/*set scroll-page-aware "true"*/
+/*set smooth-scroll true*/
+/*set scroll-full-overlap 0.01*/
+/*set scroll-step 100*/
 
-unmap f
-map f toggle_fullscreen
-map [fullscreen] f toggle_fullscreen
+/*unmap f*/
+/*map f toggle_fullscreen*/
+/*map [fullscreen] f toggle_fullscreen*/
 
-# Open document in fit-width mode by default
-set adjust-open "best-fit"
+/*# Open document in fit-width mode by default*/
+/*set adjust-open "best-fit"*/
 
-#https://github.com/rusty-electron/dotfiles/blob/master/.config/zathura/zathurarc
-set font "monospace normal 10"
-set selection-clipboard clipboard
-set sandbox one
-set recolor lightcolor \#2f2d2e
-set recolor-darkcolor \#f4ecd6
+/*#https://github.com/rusty-electron/dotfiles/blob/master/.config/zathura/zathurarc*/
+/*set font "monospace normal 10"*/
+/*set selection-clipboard clipboard*/
+/*set sandbox one*/
+/*set recolor lightcolor \#2f2d2e*/
+/*set recolor-darkcolor \#f4ecd6*/

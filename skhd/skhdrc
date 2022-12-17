@@ -1,5 +1,5 @@
 # open iTerm2, VScode, and Firefox with shortcuts
-cmd - t : open -a kitty
+cmd - k : open -a kitty
 #cmd + shift - return : open -a "Visual Studio Code"
 cmd - b : open -a Brave\ Browser
 

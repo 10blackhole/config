@@ -5,13 +5,14 @@ set clipboard=unnamed
 syntax enable
 set showcmd
 set ruler
-set encoding=utf-8
+set encoding=UTF-8
 set showmatch
 set sw=2  
 set relativenumber
 "set virtualedit=all
 set background=dark
 set cursorline
+set colorcolumn=80
 
 set laststatus=2
 set noshowmode
@@ -32,6 +33,8 @@ Plug 'sainnhe/gruvbox-material'
 " 
 " IDE
 Plug 'easymotion/vim-easymotion'
+Plug 'itchyny/vim-cursorword'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'vim-pandoc/vim-pandoc' 
 Plug 'vim-pandoc/vim-pandoc-syntax' 
 Plug 'scrooloose/nerdtree'
@@ -49,6 +52,8 @@ Plug 'airblade/vim-rooter'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 "Plug 'mhinz/vim-signify'
+
+Plug 'ThePrimeagen/vim-be-good'
 
 "syntax
 Plug 'sheerun/vim-polyglot'
@@ -75,8 +80,8 @@ Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
-colorscheme gruvbox
-hi Normal guibg=NONE ctermbg=NONE
+colorscheme catppuccin-mocha
+"hi Normal guibg=NONE ctermbg=NONE
 let g:gruvbox_contsrast_dark = 'hard'
 let NERDTreeQuitOnOpen=0
 let NERDTreeShowHidden=0
@@ -151,3 +156,4 @@ nnoremap <C-g> :Goyo<CR>
 
  "Use deoplete.
 "let g:deoplete#enable_at_startup = 1
+"
