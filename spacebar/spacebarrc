@@ -12,7 +12,7 @@ spacebar -m config display_separator on
 spacebar -m config display_separator_icon |
 spacebar -m config display_separator_icon_color white
 spacebar -m config clock on
-spacebar -m config clock_icon ?
+spacebar -m config clock_icon 
 spacebar -m config power on
 spacebar -m config clock_format      "%A, %B %-d, %Y %R %Z"
 spacebar -m config dnd on
