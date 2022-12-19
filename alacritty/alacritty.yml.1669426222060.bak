@@ -1,0 +1,90 @@
+live_config_reload: true
+
+window:
+  opacity: 0.85
+  padding:
+    x: 18
+    y: 16
+  dynamic_padding: false
+  decorations: buttonless
+
+font:
+  normal:
+    family: "SFMono Nerd Font"
+    style: Regular
+  size: 18.0
+  use_thin_strokes: true
+  # Window Customization
+  #window:
+  #opacity: 0.85
+  #dimensions:
+  #columns: 140
+  #lines: 38
+  #padding:
+  #x: 18
+  #y: 16
+  #decorations: full #Still won't show in a window manger, but will in a desktop environment
+  #scrolling:
+  #history: 10000
+  #multiplier: 3
+  #window.dynamic_title: true
+  # Font Customization
+  #font:
+  # normal:
+  #  family: Hack Nerd Font Mono
+  # style: Regular
+  #bold:
+  # family: Hack Nerd Font Mono
+  #style: Bold
+  #italic:
+  # family: Hack Nerd Font Mono
+  #style: Italic
+  #size: 10
+  #offset:
+  # x: 0
+  #y: 0
+  # glyph_offset:
+  #  x: 0
+  # y: 0
+  #use_thin_strokes: false
+  #debug:
+  # persistent_logging: false
+#draw_bold_text_with_bright_colors: true
+colors:
+  name: Monokai (dark)
+  author: Chris Kempson
+  primary:
+    background: "#272822"
+    foreground: "#f8f8f2"
+  cursor:
+    text: "#272822"
+    cursor: "#f8f8f2"
+  normal:
+    black: "#272822"
+    red: "#f92672"
+    green: "#a6e22e"
+    yellow: "#f4bf75"
+    blue: "#66d9ef"
+    magenta: "#ae81ff"
+    cyan: "#a1efe4"
+    white: "#f8f8f2"
+  bright:
+    black: "#75715e"
+    red: "#f92672"
+    green: "#a6e22e"
+    yellow: "#f4bf75"
+    blue: "#66d9ef"
+    magenta: "#ae81ff"
+    cyan: "#a1efe4"
+    white: "#f9f8f5"
+
+cursor:
+  style:
+    shape: Beam
+    blinking: off
+    blink-interval: 750
+    unfocused_hollow: true
+
+key_bindings:
+  - { key: N, mods: Control, action: SpawnNewInstance }
+theme: Monokai.dark
