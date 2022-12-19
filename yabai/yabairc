@@ -14,7 +14,23 @@ yabai -m config window_opacity               off
 yabai -m config window_opacity_duration      0.0
 yabai -m config active_window_opacity        1.0
 yabai -m config normal_window_opacity        0.90
-yabai -m config window_border                off
+
+yabai -m config active_window_opacity        1.0
+yabai -m config normal_window_opacity        0.90
+yabai -m config split_ratio                  0.50
+yabai -m config auto_balance                 on
+yabai -m config mouse_modifier               fn
+yabai -m config mouse_action1                move
+yabai -m config mouse_action2                resize
+
+#yabai -m config \
+    #window_border off \
+    #window_border_width 4 \
+    #window_shadow on \
+    #active_window_border_color 0xe1f38ba8 \
+    #normal_window_border_color 0x7df38ba8 \
+    #insert_feedback_color 0xfff9e2af \
+
 yabai -m config window_border_width          6
 yabai -m config active_window_border_color   0xff775759
 yabai -m config normal_window_border_color   0xff555555
@@ -57,3 +73,4 @@ yabai -m space 10 --label X
 echo "yabai configuration loaded.."
 # make space for spacebar
 yabai -m config top_padding 32
+
