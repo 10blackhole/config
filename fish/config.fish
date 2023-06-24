@@ -53,3 +53,4 @@ export BAT_THEME="Catppuccin-mocha"
 
 
 fish_add_path /Users/borjaalejandrodiezbravo/borja10bravo/.spicetify
+fish_add_path /Users/borjaalejandrodiezbravo/borja10bravo/.local/bin/
