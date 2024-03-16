@@ -10,7 +10,7 @@ set showmatch
 set sw=2  
 set relativenumber
 "set virtualedit=all
-set background=dark
+"set background=dark
 set cursorline
 set colorcolumn=80
 
@@ -30,6 +30,8 @@ Plug 'dylanaraps/wal.vim' " colorscheme wal
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'neovim/nvim-lspconfig'
 Plug 'sainnhe/gruvbox-material'
+Plug 'navarasu/onedark.nvim'
+Plug 'rebelot/kanagawa.nvim'
 " 
 " IDE
 Plug 'easymotion/vim-easymotion'
@@ -61,6 +63,11 @@ Plug 'sheerun/vim-polyglot'
 " LaTeX
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'lervag/vimtex'
+let g:tex_flavor='latex'
+"let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
+set conceallevel=1
+let g:tex_conceal='abdmg'
 
 "Julia
 Plug 'JuliaEditorSupport/julia-vim'
@@ -80,9 +87,9 @@ Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
-colorscheme catppuccin-mocha
+colorscheme gruvbox
 "hi Normal guibg=NONE ctermbg=NONE
-let g:gruvbox_contsrast_dark = 'hard'
+"let g:gruvbox_contsrast_dark = 'hard'
 let NERDTreeQuitOnOpen=0
 let NERDTreeShowHidden=0
 let g:airline_theme='one'
@@ -132,6 +139,9 @@ nnoremap <C-k> 10<C-y>
 nmap <leader>tc :VimtexTocOpen<CR>
 nmap <leader>co :VimtexCompile<CR>
 "
+" Disable conceals by default
+"let g:vimtex_syntax_conceal = []
+"
 " Ultisnips
 "let g:UltiSnipsExpandTrigger = '<tab>'
 "let g:UltiSnipsJumpForwardTrigger = '<tab>'
@@ -143,6 +153,7 @@ nnoremap <leader>tar :-1read ~/.config/platillas/tarea.tex<CR>
 nnoremap <leader>graf :-1read ~/.config/platillas/grafico.py<CR>
 nnoremap <leader>fig :-1read ~/.config/platillas/fig.tex<CR>
 nnoremap <leader>eq :-1read ~/.config/platillas/equation.tex<CR>
+nnoremap <leader>nt :-1read ~/.config/platillas/note.tex<CR>
 nnoremap <leader>e2 :-1read ~/.config/platillas/eq-system.tex<CR>
 nnoremap <leader>al :-1read ~/.config/platillas/align.tex<CR>
 nnoremap <leader>3d :-1read ~/.config/platillas/graf3d.py<CR>
@@ -153,6 +164,7 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 "Goyo
 nnoremap <C-g> :Goyo<CR>
+
 
  "Use deoplete.
 "let g:deoplete#enable_at_startup = 1
